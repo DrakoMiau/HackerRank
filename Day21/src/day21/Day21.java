@@ -5,15 +5,19 @@ import java.util.Scanner;
 public class Day21 {
 
     public static <T> void main(String[] args) {
-        for (int j = 0; j < 2; j++) {
             Scanner scan = new Scanner(System.in);
             int n = scan.nextInt();
             T[] arr = (T[]) new Object[n];
             for (int i = 0; i < n; i++) {
                 arr[i] = (T) scan.next();
             }
+            n = scan.nextInt();
+            T[] arr2 = (T[]) new Object[n];
+            for (int i = 0; i < n; i++) {
+                arr2[i] = (T) scan.next();
+            }
             printArray(arr);
-        }
+            printArray(arr2);
 
     }
 
